@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da aba do navegador -->
+    <title>Lista de Compras</title>
+
+    <!-- Fontes do Google usadas no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link para o arquivo de estilos -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Imagem da sacola de compras -->
+      <img src="assets/bag.png" alt="sacola de compras" />
+
+      <!-- Formulário para adicionar itens -->
+      <form>
+        <!-- Campo de entrada de texto para digitar o item -->
+        <input
+          class="input-item"
+          id="input-item"
+          type="text"
+          placeholder="Digite o item que deseja adicionar"
+        />
+
+        <!-- Botão que adiciona o item na lista -->
+        <button class="button-item" id="adicionar-item" type="button">
+          Salvar item
+        </button>
+      </form>
+
+      <!-- Área onde a lista será exibida -->
+      <div class="container-lista">
+        <h2>Lista de compras</h2>
+        <hr />
+
+        <!-- Lista de compras onde os itens serão inseridos via JavaScript -->
+        <ul id="lista-de-compras">
+          <!-- Os itens serão adicionados dinamicamente aqui -->
+        </ul>
+      </div>
+    </main>
+
+    <!-- Arquivo JavaScript que adiciona interatividade à lista -->
+    <script defer src="script.js"></script>
+  </body>
+</html>
